@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'permanent marker';
+  background: url('./assets/static-rock-background.jpg');
+  box-sizing: border-box;
+}
+
+.add-workout {
+  background: hsla(0, 0%, 52%, .4);
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  padding: 15px;
+  width: 400px;
+}
+
+.main-header {
+  background: #FFF;
+  display: inline-flex;
+  height: 40px;
+  justify-content: space-between;
+  padding: 5px 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.main-top-section {
+  display: inline-flex;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.header-main-title, .title-welcome {
+  color: #707070;
+}
+
+.welcome-name {
+  color: #8D8D8D;
+}
+
+.title-part-two {
+  color: #8D8D8D;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+}
+
+.workout-input {
+  display: inline-flex;
+  height: 25px;
+  margin-bottom: 15px;
+  width: 80%;
+}
+
+.input {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.workout-btn {
+  background: #D97F7F;
+  border: none;
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  height: 40px;
+  padding: 5px 15px ;
+  text-align: start;
+}
+
+/*GOALS*/
+
+.goals-container {
+  background: hsla(0, 0%, 52%, .4);
+  color: #FFF;
+  width: 100%;
+}
+
+/* SIDEBAR */
+
+.menu-name-icon {
+  background: #CECECE;
+  font-family: 'Raleway', sans-serif;
+  padding: 10px;
+}
+
+.nav-title,
+.user-name {
+  color: #707070;
+}
+
+.user-weight {
+  color: #FFF;
+}
+
+.user-info {
+  background: #FFF;
+  border-radius: 20px;
+  margin-right: 50px;
+  width: 200px;
+}
+
+.button-wrapper {
+  position: relative;
+}
+
+.nav-buttons {
+  height: 50px;
+  padding: 10px;
+  width: 200px;
+}
+
+.facebook, 
+.twitter,
+.instagram {
+  border-radius: 8px;
+  color: #FFF;
+}
+
+.facebook {
+  background: #4061A6;
+}
+
+.twitter {
+  background: #5AB5FB;
+}
+
+.instagram {
+  background: #774E43;
+}
+
+.fab {
+  font-size: 30px;
+  padding: 10px;
+}
+
+/* CALENDAR */
+.calendar {
+  background-color: #CECECE;
+  padding: 10px;
+  width: 100%;
+}
+
+.calendar-grid {
+  border: 10px solid #FFF;
+}
+
+.calendar-header {
+  background: #D97F7F;
+  padding: 5px;
+}
+
+.calendar-title {
+  color: #FFF;
+  font-size: 32px;
+}
+
+.calendar-date {
+  background-color: #FFF;
+  border: 4px solid #CECECE;
+  border-bottom: 15px solid #CECECE;
+  height: 40px;
+  margin: 0;
+  width: 40px;
+}
+
+.calendar-date:hover {
+  background-color: #D97F7F;
+
+}
+
+.current-calendar-date,
+.workout-category-name {
+  color: #FFF;
+  float: right;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 20px;
+}
+
+td, th {
+  padding: 5px;
+}
+
+.goals-container-mobile {
+  display: none;
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 800px) {
+  body {
+    /* background: lightblue; */
+  }
+
+  .main-top-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .calendar-section {
+    width: 90%;
+  }
+
+  .add-workout {
+    background: none;
+    width: 98%;
+  }
+
+  .input {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+
+  .workout-input {
+    font-size: 16px;
+    height: 40px;
+    width: 96%;
+  }
+
+  .workout-btn {
+    height: 45px;
+    margin-left: 15px;
+    width: 94%;
+  }
+
+  .goals-container {
+    display: none;
+  }
+
+  .goals-container-mobile {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 70px;
+    width: 100%;
+  }
+
+  .goals-input {
+    font-size: 22px;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    width: 90%;
+  }
+
+  .goals-heading {
+    color: #FFF;
+    margin-left: 15px;
+  }
+  
+  .input-container {
+    display: inline-flex;
+  }
+
+  input[type='checkbox'] {
+    /* display: flex; */
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -2,37 +2,135 @@
   <html>
     <head>
       <title>Get Swole by ideaBox</title>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway" rel="stylesheet">
       <link rel="stylesheet" href="main.css" type="text/css">
     </head>
     <body>
-      <aside>
-        <h3 class="aside-menu-title">Menu</h3>
-        <div class="menu-name-icon">
-          <p>Chad</p>
-          <p>145 lbs</p>
-        </div>
-        <button class="nav-buttons">Home</button>
-        <button class="nav-buttons">Trophies</button>
-        <button class="nav-buttons">Goals</button>
-        <button class="nav-buttons">Workouts</button>
-        <p class="menu-logout">Log out</p>
-      </aside>
+      <header class="main-header">
+        <h1><span class="header-main-title">GetSwole</span><span class="title-part-two">by ideaBox</span></h1>
+        <h1 class="right-header"><span class="title-welcome">Welcome,</span> <span class="welcome-name">Churro</span></h1>
+      </header>
       <main>
-        <section class="calendar">
-          <header>March <span class="current-calendar-date">Wed 25th 2019</span></header>
-          <span class="calendar-grid-container">
-            <article class="calendar-grid">
-            </article>
-          </span>
+        <section class="main-top-section">
+            <aside class="user-info">
+                <div class="menu-name-icon">
+                  <p class="user-name">Chad</p>
+                  <p class="user-weight">145 lbs</p>
+                </div>
+                <p class="nav-title">SHARE CURRENT WORKOUT</p>
+                <div class="button-wrapper">
+                  <button class="nav-buttons facebook"><i class="fab fa-facebook-f"></i>Share to Facebook</button>
+                  <button class="nav-buttons twitter">Share to Twitter <i class="fab fa-twitter"></i></button>
+                  <button class="nav-buttons instagram"><i class="fab fa-instagram"></i>Share to Instagram</button>
+                </div>
+                <p class="menu-logout">Log out</p>
+              </aside>
+          <section class="calendar-section">
+            <header class="calendar-header"><span class="calendar-title">MARCH</span><span class="current-calendar-date">Wed 25th 2019</span></header>
+            <span class="calendar-grid-container">
+              <article class="calendar-grid">
+                  <table class="calendar">
+                    <tr>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                    </tr>
+                    <tr>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                    </tr>
+                    <tr>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                    </tr>
+                    <tr>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                    </tr>
+                    <tr>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                      <td class="calendar-date"></td>
+                    </tr>
+                  </table>
+              </article>
+            </span>
+          </section>
         </section>
         <section class="add-workout">
-          <h3>New Workout</h3>
-          <input />
-          <input />
-          <input />
-          <input />
-          <button>Add Workout</button>
+          <h3>NEW WORKOUT</h3>
+          <article class="input">
+            <p class="workout-category-name">Category: </p><input class="workout-input" placeholder="Arms"/>
+          </article>
+          <article class="input" >
+            <p class="workout-category-name">Reps:</p><input class="workout-input" placeholder="10"/>
+          </article>
+          <article class="input" >
+            <p class="workout-category-name">Sets:</p><input class="workout-input" placeholder="3"/>
+          </article>
+          <article class="input">
+            <p class="workout-category-name">Weight:</p><input class="workout-input" placeholder="body weight"/>
+          </article>
+          <button class="workout-btn">Add Workout <i class="fas fa-plus"></i></button>
         </section>
+        <table class="goals-container">
+          <tr>
+            <td><h3>GOALS</h3></td>
+            <td><h4>Active Goals</h4></td>
+            <td><h4>Completed Goals</h4></td>
+          </tr>
+          <tr>
+            <td><h3>Create New Goal:</h3></td>
+            <td><input /></td>
+            <td><input /></td>
+          </tr>
+          <tr>
+            <td><input /></td>
+            <td><input /></td>
+            <td><input /></td>
+          </tr>
+        </table>
+        <section class="goals-container-mobile">
+          <h3 class="goals-heading">Create a new goal:</h3>
+          <div class="input-container">
+            <input class="goals-input" placeholder="Enter a goal..." /> <input class="check" type="checkbox"/>
+          </div>
+          <h3 class="goals-heading"> Active goals:</h3> 
+          <div class="input-container">
+            <input class="goals-input" placeholder="Get To 160 lbs"/> <input class="check" type="checkbox"/>
+          </div>
+          <div class="input-container">
+            <input class="goals-input" placeholder="Bench 150 lbs"/> <input class="check" type="checkbox"/>
+          </div>
+          <h3 class="goals-heading">Completed goals:</h3>
+          <div class="input-container">
+            <input class="goals-input" placeholder="Get To 140 lbs"/> <input class="check" type="checkbox"/>
+          </div>
+          <div class="input-container">
+            <input class="goals-input" placeholder="Bench 120lbs"/> <input class="check" type="checkbox"/>
+          </div>
+        </section>
+
       </main>
 
     </body>
