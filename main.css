@@ -73,6 +73,13 @@ h3 {
   height: 40px;
   padding: 5px 15px ;
   text-align: start;
+  height: 45px;
+  margin-left: 15px;
+  width: 94%;
+}
+
+.workout-btn:hover {
+  background: #c37272;
 }
 
 /*GOALS*/
@@ -104,6 +111,7 @@ h3 {
   background: #FFF;
   border-radius: 20px;
   margin-right: 50px;
+  padding: 10px;
   width: 200px;
 }
 
@@ -115,6 +123,7 @@ h3 {
   height: 50px;
   padding: 10px;
   width: 200px;
+  margin-bottom: 7px;
 }
 
 .facebook, 
@@ -128,17 +137,34 @@ h3 {
   background: #4061A6;
 }
 
+.facebook:hover {
+  background: #3B5998;
+}
+
 .twitter {
   background: #5AB5FB;
+}
+
+.twitter:hover {
+  background: #55ACEF;
 }
 
 .instagram {
   background: #774E43;
 }
 
+.instagram:hover {
+  background: #6A453C
+}
+
 .fab {
   font-size: 30px;
   padding: 10px;
+}
+
+.menu-logout:hover {
+  color: grey;
+  cursor: pointer;
 }
 
 /* CALENDAR */
@@ -225,12 +251,6 @@ td, th {
     width: 96%;
   }
 
-  .workout-btn {
-    height: 45px;
-    margin-left: 15px;
-    width: 94%;
-  }
-
   .goals-container {
     display: none;
   }
@@ -264,5 +284,10 @@ td, th {
     /* display: flex; */
     width: 40px;
     height: 40px;
+  }
+
+  .user-info {
+    margin-bottom: 25px;
+    width: 95%;
   }
 }
